@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Matvey Avdeev](https://up.htmlacademy.ru/htmlcss/29/user/1468275).
-* Наставник: [Дмитрий Вашкевич] (https://htmlacademy.ru/profile/id116959).
+* Наставник: [Дмитрий Вашкевич] (https://up.htmlacademy.ru/htmlcss/29/user/116959).
 
 ---
 
