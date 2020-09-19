@@ -1,5 +1,51 @@
 /*fonts*/
 @font-face {
-
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cuprum Regular'), local('Cuprum-Regular'),
+       url('../fonts/cuprum-v12-latin_cyrillic-regular.woff2') format('woff2'),
+       url('../fonts/cuprum-v12-latin_cyrillic-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Cuprum';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Cuprum Italic'), local('Cuprum-Italic'),
+       url('../fonts/cuprum-v12-latin_cyrillic-italic.woff2') format('woff2'),
+       url('../fonts/cuprum-v12-latin_cyrillic-italic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Cuprum Bold'), local('Cuprum-Bold'),
+       url('../fonts/cuprum-v12-latin_cyrillic-700.woff2') format('woff2'),
+       url('../fonts/cuprum-v12-latin_cyrillic-700.woff') format('woff');
+}
+@font-face {
+  font-family: 'Cuprum';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Cuprum Bold Italic'), local('Cuprum-BoldItalic'),
+       url('../fonts/cuprum-v12-latin_cyrillic-700italic.woff2') format('woff2'),
+       url('../fonts/cuprum-v12-latin_cyrillic-700italic.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'),
+       url('../fonts/pt-sans-v12-latin_cyrillic-regular.woff2') format('woff2'),
+       url('../fonts/pt-sans-v12-latin_cyrillic-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'),
+       url('../fonts/pt-sans-v12-latin_cyrillic-700.woff2') format('woff2'),
+       url('../fonts/pt-sans-v12-latin_cyrillic-700.woff') format('woff');
+}
