@@ -294,11 +294,13 @@
   color: var(--basic-blue);
 }
 
-.pop-product-item {
+.pop-product-item,
+.product-item {
   font-weight: bold;
 }
 
 .product-name {
+  font-weight: bold;
   font-size: 18px;
   line-height: 20px;
   color: var(--basic-black);
@@ -342,24 +344,24 @@
   text-decoration: none;
   background-color: var(--basic-blue);
   box-shadow:
-  0px 1px 0px #293449,
-  inset 0px 1px 0px #405069;
+    0px 1px 0px #293449,
+    inset 0px 1px 0px #405069;
 }
 
 .service-item a:hover {
   color: var(--basic-blue);
   background-color: var(--basic-dark-blue);
   box-shadow:
-  0px 1px 0px #293449,
-  inset 0px 1px 0px #405069;
+    0px 1px 0px #293449,
+    inset 0px 1px 0px #405069;
 }
 
 .service-item a:active {
   color: var(--basic-blue);
   background-color: var(--basic-white);
   box-shadow:
-  0px 1px 0px #FFFFFF,
-  inset 0px 1px 0px #FFFFFF;
+    0px 1px 0px #FFFFFF,
+    inset 0px 1px 0px #FFFFFF;
 }
 
 .service-item p {
@@ -465,4 +467,194 @@
 .footer-link:active {
   text-decoration: none;
   color: var(--basic-red);
+}
+
+/*main-catalog*/
+/*
+.wrapper {}
+*/
+.wrapper h1 {
+  background-color: #F2F6F8;
+  color: var(--basic-blue);
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.filter-products h3,
+.sorting,
+.sorting p {
+  background-color: #F7F3EC;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.sorting-list {
+  list-style: none;
+}
+/*
+.sorting-item {}
+*/
+
+.sorting-item a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.sorting-item a:hover {
+  opacity: 1;
+}
+
+.sorting-item a:active {
+  color: var(--basic-red);
+}
+
+.breadcrumbs,
+.pagination-item a {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.breadcrumbs-item a,
+.pagination-item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+/*Кнопки на карточках товара*/
+.btn-buy,
+.btn-bookmarks {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn-buy {
+  color: var(--basic-white);
+}
+
+.btn-bookmarks {
+  color: var(--basic-blue);
+}
+
+.btn-bookmarks-container {
+  border: 3px solid #63A63E;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.btn-bookmarks-container:hover {
+  border: 3px solid #32425C;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.btn-bookmarks-container:active {
+  border: 3px solid #32425C;
+  box-sizing: border-box;
+  border-radius: 2px;
+  opacity: 0.5;
+}
+
+.btn-buy-container {
+  background-color: var(--basic-green);
+  box-shadow: inset 0px -3px 0px #367315;
+  border-radius: 2px;
+}
+
+.btn-buy-container:hover {
+  background-color: var(--color-success);
+  box-shadow: inset 0px -3px 0px #367315;
+  border-radius: 2px;
+}
+
+.btn-buy-container:active {
+  background-color: #518534;
+  box-shadow: inset 0px -3px 0px #367315;
+  border-radius: 2px;
+}
+
+/*Пагинация*/
+.pagination-item {
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.pagination-item:hover {
+  border: 1px solid var(--basic-graylight);
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.pagination-item:active {
+  background-color: var(--basic-white);
+  color: var(--basic-white);
+  border: 1px solid var(--basic-red);
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.active-btn {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+}
+
+/*Описание перфораторов*/
+.perforator-description {
+  background-color: var(--basic-darkwhite);
+}
+.perforator-description h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.perforator-description p {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
+/*Корзина*/
+.cart p {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--basic-black);
+}
+
+.cart-bottom {
+  background-color: #F1F1F1;
+}
+
+.cart-checkout {
+  background-color: var(--basic-red);
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--basic-white);
+}
+
+.continue-shopping {
+  background-color: var(--basic-white);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  color: var(--basic-black);
 }
