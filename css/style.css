@@ -96,6 +96,10 @@
 }
 
 .main-header-logo {
+  display: block;
+  width: 108px;
+  height: 18px;
+  padding: 12px 57px 17px 55px;
   background-color: var(--basic-red);
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
@@ -322,6 +326,10 @@
 }
 
 /*Сервисы*/
+.services {
+  background-color: var(--basic-darkwhite);
+}
+
 .services h2 {
   font-size: 30px;
   line-height: 30px;
