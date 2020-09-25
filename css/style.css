@@ -505,6 +505,7 @@
 .sorting-list {
   list-style: none;
 }
+
 /*
 .sorting-item {}
 */
@@ -624,6 +625,7 @@
 .perforator-description {
   background-color: var(--basic-darkwhite);
 }
+
 .perforator-description h2 {
   font-size: 30px;
   line-height: 30px;
