@@ -112,7 +112,7 @@
 
 .top-menu {
   display: grid;
-  grid-template-columns: repeat(1fr, 5);
+  grid-template-columns: repeat(5, 1fr);
   height: 42px;
   width: 940px;
   margin: 0 auto;
@@ -146,7 +146,7 @@
 
 .middle-header {
   display: grid;
-  grid-template-columns: repeat(1fr, 4);
+  grid-template-columns: repeat(4, 1fr);
   width: 940px;
   height: 75.5px;
   margin: 40px auto 40px auto;
@@ -301,8 +301,8 @@
 
 .adventages-list {
   display: grid;
-  grid-template-columns: repeat(1fr, 3);
-  grid-template-rows: repeat(1fr, 3);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 20px;
   list-style: none;
 }
@@ -411,7 +411,7 @@
 
 .pop-products-list {
   display: grid;
-  grid-template-columns: repeat(1fr, 4);
+  grid-template-columns: repeat(4, 1fr);
   column-gap: 20px;
 }
 
@@ -469,9 +469,8 @@
 
 .pop-manufacturers-list {
   display: grid;
-  grid-template-columns: repeat(1fr, 4);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  margin-top: 70px;
   margin-bottom: 70px;
 }
 
@@ -652,7 +651,7 @@
 
 .footer-section-bottom {
   display: grid;
-  grid-template-columns: repeat(1fr, 4);
+  grid-template-columns: repeat(4, 1fr);
   width: 940px;
   height: 107px;
   margin: 0 auto;
