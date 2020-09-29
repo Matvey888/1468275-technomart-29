@@ -68,6 +68,8 @@
   --basic-yellow: #FFC047;
   --basic-darkenwhite: #F3F7F9;
   --special-white: #F9F5F0;
+  --special-white-bg: #F2F6F8;
+  --special-darken-white: #F7F3EC;
   --special-yellow: #FFBF47;
   --special-yellowlight: #FFD180;
   --special-blue: #3BBCE3;
@@ -159,9 +161,9 @@
   grid-row: 1 / 2;
 }
 
-.reg-link {
-  grid-column: 4 / 5;
-  grid-row: 1 / 2;
+.add-links {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
 }
 
 /*header*/
@@ -191,7 +193,6 @@
 
 .checkout {
   background-color: var(--basic-green);
-
 }
 
 .top-menu a {
@@ -261,6 +262,14 @@
   color: var(--basic-graylight);
 }
 
+.add-links a {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  color: var(--basic-blue);
+}
+
 .main-nav-container {
   display: grid;
   width: 940px;
@@ -315,6 +324,7 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .adventages-button {
@@ -595,6 +605,7 @@
 .page-footer {
   background-color: inherit;
 }
+
 /*
 .footer-logo {
 
@@ -667,6 +678,7 @@
 .footer-copyright {
   grid-column: 1/2;
 }
+
 .footer-social {
   grid-column: 2/3;
 }
@@ -708,17 +720,38 @@
 .wrapper {}
 */
 .wrapper h1 {
-  background-color: #F2F6F8;
+  background-color: var(--special-white-bg);
   color: var(--basic-blue);
   text-transform: uppercase;
   font-size: 30px;
   line-height: 30px;
 }
 
+.catalog-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 18px 89px 38px repeat(3, 1fr) 38px;
+  gap: 20px;
+}
+
+.breadcrumbs {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+}
+.breadcrumbs-list li {
+  display: inline;
+}
+
+.catalog-container h1 {
+  grid-column: 1 / -1;
+  grid-row: 2/3;
+}
+
 .filter-products h3,
+.sorting-list,
 .sorting,
-.sorting p {
-  background-color: #F7F3EC;
+.sorting span {
+  background-color: var(--special-darken-white);
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -726,9 +759,20 @@
   line-height: 18px;
   color: var(--basic-black);
   text-transform: uppercase;
+  margin: 0;
+}
+.filter-products {
+  grid-column: 1 / 2;
+  grid-row: 3 / 5;
 }
 
-.sorting-list {
+.sorting {
+  grid-column: 2 / -1;
+  grid-row: 3 / 4;
+}
+
+.sorting-list li {
+  display: inline;
   list-style: none;
 }
 
@@ -764,6 +808,33 @@
   text-decoration: none;
   text-transform: uppercase;
   color: var(--basic-black);
+}
+.products {
+  grid-column: 2 / -1;
+  grid-row: 4 / 7;
+}
+
+.pagination {
+  grid-column: 2 / -1;
+  grid-row: 7 / 8;
+}
+
+
+.perf-container {
+  background-color: var(--basic-darkwhite);
+}
+
+.perforator-description {
+  width: 940px;
+  height: 261px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(3, 220px);
+  grid-template-rows: repeat(3, 318px);
+  gap: 20px;
 }
 
 /*Кнопки на карточках товара*/
