@@ -34,8 +34,10 @@
           строительных материалов
           и инструментов для ремонта
         </p>
-        <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-        <p class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <div class="header-contacts">
+          <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <p class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
         <a class="login-link" href="blank.html">Вход</a>
         <a class="reg-link" href="blank.html">Регистрация</a>
       </div>
@@ -81,7 +83,7 @@
         </li>
         <li class="sliders">
           <div class="slide1">
-            <h3>ПЕРФОРАТОРЫ</h3>
+            <h3>Перфораторы</h3>
             <p>Настоящие мужские игрушки</p>
             <img src="img/man-with-perforator.jpg" width="620" height="266" alt="картинка: рабочий с перфоратором">
             <a class="main-button open-catalog" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
@@ -99,17 +101,15 @@
     <section class="pop-products">
       <div class="headline">
         <h2>Популярные товары:</h2>
-        <a class="main-button all-products" href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+        <a class="main-button all-products-btn" href="#">Все популярные товары</a>
       </div>
       <ul class="pop-products-list">
         <li class="pop-product-item">
-          <a href="catalog.html">
-            <div class="img-product">
-              <img src="img/bfg9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
-            </div>
 
-          </a>
-          <p class="product-name">Перфоратор BOSCH BFG 9000</p>
+          <div class="img-product">
+            <img src="img/bfg9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
+          </div>
+          <p class="product-name"><a href="catalog.html">Перфоратор BOSCH BFG 9000</a></p>
           <p class="old-price">
             32500 Р.
           </p>
@@ -124,13 +124,11 @@
           </div>
         </li>
         <li class="pop-product-item">
-          <a href="catalog.html">
-            <div class="img-product">
-              <img src="img/bfg3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
-            </div>
 
-          </a>
-          <p class="product-name">Перфоратор BOSCH BFG 3000</p>
+          <div class="img-product">
+            <img src="img/bfg3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
+          </div>
+          <p class="product-name"><a href="catalog.html">Перфоратор BOSCH BFG 3000</a></p>
           <p class="old-price">
             22500 Р.
           </p>
@@ -145,13 +143,11 @@
           </div>
         </li>
         <li class="pop-product-item">
-          <a href="catalog.html">
-            <div class="img-product">
-              <img src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-            </div>
 
-          </a>
-          <p class="product-name">Перфоратор BOSCH BFG 6000</p>
+          <div class="img-product">
+            <img src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+          </div>
+          <p class="product-name"><a href="catalog.html">Перфоратор BOSCH BFG 6000</a></p>
           <p class="old-price">
             30500 Р.
           </p>
@@ -166,12 +162,11 @@
           </div>
         </li>
         <li class="pop-product-item">
-          <a href="catalog.html">
-            <div class="img-product">
-              <img src="img/bfg2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
-            </div>
-          </a>
-          <p class="product-name bfg2000">Перфоратор BOSCH BFG 2000</p>
+
+          <div class="img-product">
+            <img src="img/bfg2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+          </div>
+          <p class="product-name bfg2000"><a href="catalog.html">Перфоратор BOSCH BFG 2000</a></p>
 
           <span class="price">12500 Р.</span>
           <div class="pop-up-product">
@@ -188,50 +183,66 @@
 
     <section class="pop-manufacturers">
       <div class="headline">
-        <h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
-        <a class="main-button all-products" href="#">Все производители</a>
+        <h2>Популярные производители:</h2>
+        <a class="main-button all-products-btn" href="#">Все производители</a>
       </div>
 
 
       <ul class="pop-manufacturers-list">
         <li class="manufacturer-item">
           <a href="#">
-            <img src="img/bosch.png" width="126" height="37" alt="Производитель BOSCH">
+            <div class="card-manufacturer">
+              <img src="img/bosch.png" width="126" height="37" alt="Производитель BOSCH">
+            </div>
           </a>
         </li>
         <li class="manufacturer-item">
           <a href="#">
-            <img src="img/makita.png" width="123" height="40" alt="Производитель Makita">
+            <div class="card-manufacturer">
+              <img src="img/makita.png" width="123" height="40" alt="Производитель Makita">
+            </div>
           </a>
         </li>
         <li class="manufacturer-item">
           <a href="#">
-            <img src="img/dewalt.png" width="146" height="44" alt="Производитель DeWALT">
+            <div class="card-manufacturer">
+              <img src="img/dewalt.png" width="146" height="44" alt="Производитель DeWALT">
+            </div>
           </a>
         </li>
         <li class="manufacturer-item">
           <a href="#">
-            <img src="img/interskol.png" width="200" height="76" alt="Производитель ИНТЕРСКОЛ">
+            <div class="card-manufacturer">
+              <img src="img/interskol.png" width="200" height="76" alt="Производитель ИНТЕРСКОЛ">
+            </div>
           </a>
         </li>
         <li class="manufacturer-item">
           <a href="#">
-            <img src="img/hitachi.png" width="169" height="31" alt="Производитель HITACHI">
+            <div class="card-manufacturer">
+              <img src="img/hitachi.png" width="169" height="31" alt="Производитель HITACHI">
+            </div>
           </a>
         </li>
         <li class="manufacturer-item">
           <a href="#">
-            <img src="img/lg.png" width="121" height="73" alt="Производитель LG">
+            <div class="card-manufacturer">
+              <img src="img/lg.png" width="121" height="73" alt="Производитель LG">
+            </div>
           </a>
         </li>
         <li class="manufacturer-item">
           <a href="#">
-            <img src="img/aeg.png" width="151" height="98" alt="Производитель AEG">
+            <div class="card-manufacturer">
+              <img src="img/aeg.png" width="151" height="98" alt="Производитель AEG">
+            </div>
           </a>
         </li>
         <li class="manufacturer-item">
           <a href="#">
-            <img src="img/metabo.png" width="206" height="73" alt="Производитель Metabo">
+            <div class="card-manufacturer">
+              <img src="img/metabo.png" width="206" height="73" alt="Производитель Metabo">
+            </div>
           </a>
         </li>
       </ul>
@@ -304,7 +315,7 @@
           заехав в наш офис:
         </p>
         <img src="img/map.jpg" width="300" height="158" alt="Карта местоположения">
-        <a class="main-button main-feedback">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
+        <a class="main-button main-feedback">Заблудились? Напишите нам!</a>
       </section>
     </section>
   </main>
@@ -322,10 +333,10 @@
           <li class="footer-nav-item"><a href="blank.html">Доставка</a></li>
           <li class="footer-nav-item"><a href="blank.html">Контакты</a></li>
         </ul>
-        <p class="footer-adress">
-          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        <div class="footer-adress">
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <a class="footer-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-        </p>
+        </div>
         <ul class="footer-submenu">
           <li class="footer-submenu-item"><a href="blank.html">Материалы</a></li>
           <li class="footer-submenu-item"><a href="blank.html">Техника</a></li>
