@@ -428,14 +428,14 @@
 }
 
 /*Main*/
+.main-block {
+  display: grid;
+}
 
 .wrapper {
-  display: grid;
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
-
-  /* align-content: start; */
 }
 
 /* Скрытие лишних элементов */
@@ -689,13 +689,16 @@
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   margin-bottom: 70px;
+  width: 940px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
 }
 
 .headline {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 940px;
   margin-bottom: 20px;
   background-color: var(--special-white);
   flex-wrap: wrap;
@@ -827,8 +830,10 @@
 
 /* Популярные производители */
 .pop-manufacturers-list {
+  margin: 0;
+  padding: 0;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 220px);
   gap: 20px;
   margin-bottom: 70px;
 }
@@ -1128,9 +1133,6 @@
 }
 
 /*main-catalog*/
-/*
-.wrapper {}
-*/
 .wrapper h1 {
   background-color: var(--special-white-bg);
   color: var(--basic-blue);
