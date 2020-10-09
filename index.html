@@ -21,12 +21,10 @@
           <a class="main-header-logo">
             <img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип магазина «Техномарт»">
           </a>
-          <form action="" method="POST">
-            <label class="search">
-              Поиск:
-              <input class="visually-hidden" type="text" name="search">
-            </label>
-          </form>
+          <div>
+            <label for="search" class="visually-hidden">Поиск:</label>
+            <input class="search" type="text" name="search" id="search" value="Поиск:">
+          </div>
           <a class="bookmarks" href="#">Закладки: 0</a>
           <a class="trash" href="#">Корзина: 0</a>
           <a class="checkout" href="#">Оформить заказ</a>
@@ -85,14 +83,28 @@
           <h3>Доставка</h3>
           <a class="adventages-button" href="blank.html">Бесплатно</a>
         </li>
-        <li class="sliders">
+        <li class="slider">
+          <label class="slider-arrow slider-back" for="one"><svg width="22" height="40"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19.9243 0.941406L21.9225 2.98921L4.90696 20.436L21.978 37.9375L19.9789 39.9853L0.910609 20.436L19.9243 0.941406Z"
+                fill="white" />
+            </svg></label>
+          <input id="one" type="radio" name="arrow" class="slider-radio slider-radio-checked" checked>
+          <label for="two" class="slider-arrow slider-forward"><svg width="22" height="40" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.07568 39.0586L0.0775051 37.0108L17.0931 19.564L0.0220261 2.06249L2.02116 0.0146904L21.0894 19.564L2.07568 39.0586Z"
+                fill="white" />
+            </svg></label>
+          <input id="two" type="radio" name="arrow" class="slider-radio slider-radio-unchecked">
           <div class="slide1">
             <h3>Перфораторы</h3>
             <p>Настоящие мужские игрушки</p>
             <img src="img/man-with-perforator.jpg" width="620" height="266" alt="картинка: рабочий с перфоратором">
             <a class="main-button open-catalog" href="catalog.html">Открыть каталог</a>
           </div>
-          <div class="slide2 visually-hidden">
+          <div class="slide2">
             <h3>Дрели</h3>
             <p>Соседям на радость</p>
             <img src="img/man-with-drill.jpg" width="620" height="266" alt="Картинка рабочий с дрелью">
@@ -261,22 +273,24 @@
       </p>
       <ul class="services-list">
         <li class="service-item">
-          <a class="service-btn">Доставка</a>
-          <div class="service-window">
-            <h3>ДОСТАВКА</h3>
+          <label for="delivery" class="service-btn">Доставка</label>
+          <input id="delivery" class="visually-hidden" type="radio" name="delivery">
+          <div class="service-window service-delivery">
+            <h3>Доставка</h3>
             <p>
               Мы с удовольствием доставим ваш товар прямо
               к вашему подъезду совершенно бесплатно!
               Ведь мы неплохо заработаем,
               поднимая его на ваш этаж!
             </p>
-            <img src="img/truck.png" width="468" height="261" alt="Изображение грузовика">
+            <!-- <img src="img/truck.png" width="468" height="261" alt="Изображение грузовика"> -->
           </div>
         </li>
         <li class="service-item">
-          <a class="service-btn">Гарантия</a>
-          <div class="service-window">
-            <h3>ГАРАНТИЯ</h3>
+          <label for="garantie" class="service-btn">Гарантия</label>
+          <input id="garantie" class="visually-hidden" type="radio" name="garantie">
+          <div class="service-window service-garantie">
+            <h3>Гарантия</h3>
             <p>
               Если купленный у нас товар поломается или заискрит,
               а также в случае пожара, спровоцированного его возгоранием,
@@ -284,18 +298,19 @@
               Мы обменяем сгоревший товар на новый.
               Дом уж восстановите как-нибудь сами.
             </p>
-            <img src="img/garantie.png" width="389" height="283" alt="Картинка гарантии">
+            <!-- <img src="img/garantie.png" width="389" height="283" alt="Картинка гарантии"> -->
           </div>
         </li>
         <li class="service-item">
-          <a class="service-btn">Кредит</a>
-          <div class="service-window">
+          <label for="credit" class="service-btn">Кредит</label>
+          <input id="credit" class="visually-hidden" type="radio" name="credit">
+          <div class="service-window service-credit">
             <h3>КРЕДИТ</h3>
             <p>
               Залезть в долговую яму стало проще!
               Кредитные консультанты придут вам на помощь.
             </p>
-            <img src="img/credit.png" width="465" height="285" alt="Картинка кредит">
+            <!-- <img src="img/credit.png" width="465" height="285" alt="Картинка кредит"> -->
           </div>
         </li>
       </ul>
