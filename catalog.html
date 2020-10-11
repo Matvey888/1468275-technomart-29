@@ -13,24 +13,25 @@
 
 <body class="page-body">
   <header class="main-header">
-    <section class="header-container">
-      <h1 hidden>Интернет-магазин Техномарт</h1>
 
-      <div class="top-header-bar">
-        <div class="top-menu">
-          <a class="main-header-logo">
-            <img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип магазина «Техномарт»">
-          </a>
-          <div>
-            <label for="search" class="visually-hidden">Поиск:</label>
-            <input class="search" type="text" name="search" id="search" value="Поиск:">
-          </div>
-          <a class="bookmarks" href="#">Закладки: 0</a>
-          <a class="trash" href="#">Корзина: 0</a>
-          <a class="checkout" href="#">Оформить заказ</a>
+    <h1 hidden>Интернет-магазин Техномарт</h1>
+
+    <div class="top-header-bar">
+      <div class="top-menu">
+        <a href="index.html" class="main-header-logo">
+          <img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип магазина «Техномарт»">
+        </a>
+        <div>
+          <label for="search" class="visually-hidden">Поиск:</label>
+          <input class="search" type="text" name="search" id="search" value="Поиск:">
         </div>
+        <a class="bookmarks" href="#">Закладки: 0</a>
+        <a class="trash" href="#">Корзина: 0</a>
+        <a class="checkout" href="#">Оформить заказ</a>
       </div>
-      <div class="middle-header">
+    </div>
+    <div class="wrapper">
+      <div class="middle-header ">
         <p class="store-description">
           Интернет-магазин
           строительных материалов
@@ -41,15 +42,24 @@
           <p class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="users-links">
-          <a class="login-link-catalog" href="blank.html">Равшан Джамшутович</a>
-          <div class="add-links">
-            <a class="my-orders" href="blank.html">Мои заказы</a>
-            <a class="cabinet" href="blank.html">Личный кабинет</a>
+          <div class="users-links-top">
+            <a class="login-link-catalog" href="blank.html">Равшан Джамшутович</a>
+            <a href="" class="logout-link"><span class="visually-hidden">Выйти</span><svg width="20" height="17"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="logout-link-fill" d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z" fill="#C5C5C5" />
+                <path class="logout-link-fill"
+                  d="M2.10598 13.952V3.048C2.12398 2.672 2.27698 1.991 3.11598 1.991H8.14297V0H3.11598C0.937975 0 0.111975 1.81 0.0869751 3.027V13.973C0.111975 15.189 0.937975 17 3.11598 17H8.14297V15.01H3.11598C2.27698 15.01 2.12398 14.327 2.10598 13.952Z"
+                  fill="#C5C5C5" />
+              </svg>
+            </a>
+            <div class="add-links">
+              <a class="my-orders" href="blank.html">Мои заказы</a>
+              <a class="cabinet" href="blank.html">Личный кабинет</a>
+            </div>
           </div>
         </div>
       </div>
-
-    </section>
+    </div>
     <div class="main-nav-container">
       <nav class="main-nav">
         <a href="index.html">Главная</a>
@@ -67,10 +77,12 @@
     <div class="catalog-container">
       <div class="breadcrumbs">
         <ol class="breadcrumbs-list">
-          <li class="breadcrumbs-item"><a href="index.html"><span  class="visually-hidden">Главная</span>
-            <svg width="14" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M2 7.99999V12H6V7.99999H8V12H12V7.99999L7 3.51599L2 7.99999Z" fill="#C1C6CE"/>
-              <path d="M13.831 6.365L12 4.751V0H9.99998V2.987L7.33198 0.635C7.31198 0.618 7.28898 0.612 7.26798 0.598C7.24294 0.579705 7.21614 0.56396 7.18798 0.551C7.15708 0.540195 7.12529 0.532163 7.09298 0.527C7.06198 0.521 7.03198 0.515 6.99998 0.515C6.96898 0.515 6.93898 0.521 6.90798 0.527C6.87551 0.531919 6.84366 0.5403 6.81298 0.552C6.78498 0.563 6.75998 0.581 6.73298 0.598C6.71198 0.612 6.68798 0.618 6.66898 0.635L0.170976 6.365C0.0162401 6.50291 -0.0375953 6.72187 0.0355474 6.9158C0.10869 7.10974 0.293707 7.23862 0.500976 7.24C0.622907 7.24035 0.740711 7.19586 0.831976 7.115L6.99998 1.677L13.169 7.115C13.3778 7.27913 13.6784 7.25178 13.8542 7.05265C14.0299 6.85352 14.0198 6.55183 13.831 6.365Z" fill="#C1C6CE"/>
+          <li class="breadcrumbs-item"><a href="index.html"><span class="visually-hidden">Главная</span>
+              <svg width="14" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 7.99999V12H6V7.99999H8V12H12V7.99999L7 3.51599L2 7.99999Z" fill="#C1C6CE" />
+                <path
+                  d="M13.831 6.365L12 4.751V0H9.99998V2.987L7.33198 0.635C7.31198 0.618 7.28898 0.612 7.26798 0.598C7.24294 0.579705 7.21614 0.56396 7.18798 0.551C7.15708 0.540195 7.12529 0.532163 7.09298 0.527C7.06198 0.521 7.03198 0.515 6.99998 0.515C6.96898 0.515 6.93898 0.521 6.90798 0.527C6.87551 0.531919 6.84366 0.5403 6.81298 0.552C6.78498 0.563 6.75998 0.581 6.73298 0.598C6.71198 0.612 6.68798 0.618 6.66898 0.635L0.170976 6.365C0.0162401 6.50291 -0.0375953 6.72187 0.0355474 6.9158C0.10869 7.10974 0.293707 7.23862 0.500976 7.24C0.622907 7.24035 0.740711 7.19586 0.831976 7.115L6.99998 1.677L13.169 7.115C13.3778 7.27913 13.6784 7.25178 13.8542 7.05265C14.0299 6.85352 14.0198 6.55183 13.831 6.365Z"
+                  fill="#C1C6CE" />
               </svg>
             </a></li>
           <li class="breadcrumbs-item"><a href="catalog.html">Каталог</a></li>
@@ -78,11 +90,79 @@
           <li class="breadcrumbs-item current-breadcrumbs"><a>Перфораторы</a></li>
         </ol>
       </div>
+
       <h1>Перфораторы</h1>
+
       <aside class="filter-products">
         <h3>Фильтр: </h3>
-
-        <!--Здесь будет форма фильтра товаров!-->
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="filter-controls">
+            <legend>Цена:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0"></div>
+                <div class="toggle toggle-max" tabindex="0"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  <input type="text" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  <input type="text" name="max-price" value="30000">
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li class="filter-option filter-checkbox">
+                <input id="filter-bosch" type="checkbox" name="bosch"
+                  class="visually-hidden filter-checkbox filter-input" checked>
+                <label for="filter-bosch" class="">Bosch</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input id="filter-interscol" type="checkbox" name="interscol"
+                  class="visually-hidden filter-checkbox filter-input">
+                <label for="filter-interscol" class="">Интерскол</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input id="filter-makita" type="checkbox" name="makita"
+                  class="visually-hidden filter-checkbox filter-input" checked>
+                <label for="filter-makita" class="">Makita</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input id="filter-dewalt" type="checkbox" name="dewalt"
+                  class="visually-hidden filter-checkbox filter-input">
+                <label for="filter-dewalt" class="">Dewalt</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input id="filter-hitachi" type="checkbox" name="hitachi"
+                  class="visually-hidden filter-checkbox filter-input">
+                <label for="filter-hitachi" class="">Hitachi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li class="filter-option filter-radio">
+                <input id="filter-battery" type="radio" name="" class="visually-hidden filter-input-radio filter-input"
+                  checked>
+                <label for="filter-battery" class="">Аккумуляторные</label>
+              </li>
+              <li class="filter-option filter-radio">
+                <input id="filter-electrical" type="radio" name=""
+                  class="visually-hidden filter-input-radio filter-input">
+                <label for="filter-electrical" class="">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="form-button" type="submit">Показать</button>
+        </form>
       </aside>
 
       <div class="sorting">
@@ -96,16 +176,17 @@
             <a class="sorting-btn" href="">По функционалу</a></li>
           <li class="sorting-item">
             <a class="sorting-btn sorting-up" href="">
-            <span class="visually-hidden">Вверх</span>
-            <svg width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.66 0l5.5 10h-11" fill="#000000"/></svg>
-          </a></li>
+              <span class="visually-hidden">Вверх</span>
+              <svg width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.66 0l5.5 10h-11" fill="#000000" /></svg>
+            </a></li>
           <li class="sorting-item">
             <a class="sorting-btn sorting-down" href="">
-            <span class="visually-hidden">Вниз</span>
-            <svg width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5.66241 10L0.162415 0H11.1624" fill="black"/>
+              <span class="visually-hidden">Вниз</span>
+              <svg width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.66241 10L0.162415 0H11.1624" fill="black" />
               </svg>
-          </a></li>
+            </a></li>
         </ul>
       </div>
       <section class="products">
@@ -383,16 +464,16 @@
   </footer>
 
   <section class="cart">
-    <h2>Корзина</h2>
+    <h2 class="visually-hidden">Корзина</h2>
     <p>
       Товар добавлен в корзину!
     </p>
     <div class="cart-bottom">
-      <a class="cart-checkout" href="#">Оформить заказ</a>
-      <a class="continue-shopping" href="#">Продолжить покупки</a>
+      <button class="cart-checkout" type="button" name="cart-button">Оформить заказ</button>
+      <button class="continue-shopping" type="button" name="cart-button">Продолжить покупки</button>
     </div>
 
-    <button type="button">Закрыть</button>
+    <button class="close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
 </body>
 
