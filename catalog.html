@@ -41,17 +41,19 @@
           <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
           <p class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
-        <div class="users-links">
-          <div class="users-links-top">
-            <a class="login-link-catalog" href="blank.html">Равшан Джамшутович</a>
-            <a href="" class="logout-link"><span class="visually-hidden">Выйти</span><svg width="20" height="17"
-                fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="logout-link-fill" d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z" fill="#C5C5C5" />
-                <path class="logout-link-fill"
-                  d="M2.10598 13.952V3.048C2.12398 2.672 2.27698 1.991 3.11598 1.991H8.14297V0H3.11598C0.937975 0 0.111975 1.81 0.0869751 3.027V13.973C0.111975 15.189 0.937975 17 3.11598 17H8.14297V15.01H3.11598C2.27698 15.01 2.12398 14.327 2.10598 13.952Z"
-                  fill="#C5C5C5" />
-              </svg>
-            </a>
+        <div class="users-links-container">
+          <div class="users-links">
+            <div class="users-login-logout">
+              <a class="login-link-catalog" href="blank.html">Равшан Джамшутович</a>
+              <a href="" class="logout-link"><span class="visually-hidden">Выйти</span><svg width="20" height="17"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="logout-link-fill" d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z" fill="#C5C5C5" />
+                  <path class="logout-link-fill"
+                    d="M2.10598 13.952V3.048C2.12398 2.672 2.27698 1.991 3.11598 1.991H8.14297V0H3.11598C0.937975 0 0.111975 1.81 0.0869751 3.027V13.973C0.111975 15.189 0.937975 17 3.11598 17H8.14297V15.01H3.11598C2.27698 15.01 2.12398 14.327 2.10598 13.952Z"
+                    fill="#C5C5C5" />
+                </svg>
+              </a>
+            </div>
             <div class="add-links">
               <a class="my-orders" href="blank.html">Мои заказы</a>
               <a class="cabinet" href="blank.html">Личный кабинет</a>
@@ -116,33 +118,33 @@
               </div>
             </div>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-manufacturers">
             <legend>Производители:</legend>
             <ul>
               <li class="filter-option filter-checkbox">
                 <input id="filter-bosch" type="checkbox" name="bosch"
                   class="visually-hidden filter-checkbox filter-input" checked>
-                <label for="filter-bosch" class="">Bosch</label>
+                <label for="filter-bosch">Bosch</label>
               </li>
               <li class="filter-option filter-checkbox">
                 <input id="filter-interscol" type="checkbox" name="interscol"
                   class="visually-hidden filter-checkbox filter-input">
-                <label for="filter-interscol" class="">Интерскол</label>
+                <label for="filter-interscol">Интерскол</label>
               </li>
               <li class="filter-option filter-checkbox">
                 <input id="filter-makita" type="checkbox" name="makita"
                   class="visually-hidden filter-checkbox filter-input" checked>
-                <label for="filter-makita" class="">Makita</label>
+                <label for="filter-makita">Makita</label>
               </li>
               <li class="filter-option filter-checkbox">
                 <input id="filter-dewalt" type="checkbox" name="dewalt"
                   class="visually-hidden filter-checkbox filter-input">
-                <label for="filter-dewalt" class="">Dewalt</label>
+                <label for="filter-dewalt">Dewalt</label>
               </li>
               <li class="filter-option filter-checkbox">
                 <input id="filter-hitachi" type="checkbox" name="hitachi"
                   class="visually-hidden filter-checkbox filter-input">
-                <label for="filter-hitachi" class="">Hitachi</label>
+                <label for="filter-hitachi">Hitachi</label>
               </li>
             </ul>
           </fieldset>
@@ -150,14 +152,14 @@
             <legend>Питание:</legend>
             <ul>
               <li class="filter-option filter-radio">
-                <input id="filter-battery" type="radio" name="" class="visually-hidden filter-input-radio filter-input"
-                  checked>
-                <label for="filter-battery" class="">Аккумуляторные</label>
+                <input id="filter-battery" type="radio" name="filter-battery"
+                  class="visually-hidden filter-input-radio filter-input" checked>
+                <label for="filter-battery">Аккумуляторные</label>
               </li>
               <li class="filter-option filter-radio">
-                <input id="filter-electrical" type="radio" name=""
+                <input id="filter-electrical" type="radio" name="filter-electrical"
                   class="visually-hidden filter-input-radio filter-input">
-                <label for="filter-electrical" class="">Сетевые</label>
+                <label for="filter-electrical">Сетевые</label>
               </li>
             </ul>
           </fieldset>
