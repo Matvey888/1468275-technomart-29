@@ -202,6 +202,28 @@
   margin: 0;
 }
 
+.trash-catalog {
+  display: block;
+  max-width: 150px;
+  position: relative;
+  background-color: var(--basic-red);
+  padding: 9px 21px 9px 35px;
+  margin-left: 14px;
+}
+
+.trash-catalog::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 13px;
+  left: 11px;
+  background-image: url('../img/icon-cart.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
 .trash::before {
   content: '';
   position: absolute;
@@ -837,32 +859,56 @@
   position: relative;
 }
 
-.slider-arrow {
+.slider-back,
+.slider-forward {
+  /* content: ''; */
   position: absolute;
   top: 122px;
+  width: 22px;
+  height: 40px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 0 0;
   z-index: 3;
   cursor: pointer;
 }
 
 .slider-back {
   left: 24px;
+
+  background-image: url('../img/icon-left.svg');
 }
 
 .slider-forward {
   right: 22px;
+  background-image: url('../img/icon-right.svg');
 }
 
-.slider-radio {
+/* .slider-radio-checked::before,
+.slider-radio-unchecked::before {
+  content: '';
   position: absolute;
-  bottom: 40px;
-  left: 295px;
-  z-index: 2;
+  bottom: 56px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--basic-white);
+  border-radius: 50%;
+  z-index: 50;
+  cursor: pointer;
 }
 
-.slider-radio-checked {
+.slider-radio-checked::before {
+  right: 295px;
+}
+
+.slider-radio-unchecked::before {
+  left: 295px;
+} */
+
+/* .slider-radio-checked {
   right: 295px;
   margin-left: 20px;
-}
+} */
 
 .slide1,
 .slide2 {
@@ -1261,6 +1307,7 @@
   color: var(--basic-blue);
 }
 
+
 /* .service-window-container {
   display: flex;
   flex-direction: column;
@@ -1328,7 +1375,8 @@
     inset 0px 1px 0px #405069;
 }
 
-.service-btn:active {
+.service-btn:active,
+.services-list>input:checked {
   color: var(--basic-blue);
   background-color: var(--basic-white);
   box-shadow:
@@ -2121,7 +2169,18 @@
 .btn-buy {
   display: block;
   padding-top: 10px;
+  padding-left: 20px;
   color: var(--basic-white);
+  position: relative;
+}
+
+.btn-buy::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 30px;
+  background-image: url('../img/icon-cart.svg');
 }
 
 .btn-bookmarks {

@@ -94,20 +94,10 @@
           <a class="adventages-button" href="blank.html">Бесплатно</a>
         </li>
         <li class="slider">
-          <label class="slider-arrow slider-back" for="one-slide"><svg width="22" height="40" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M19.9243 0.941406L21.9225 2.98921L4.90696 20.436L21.978 37.9375L19.9789 39.9853L0.910609 20.436L19.9243 0.941406Z"
-                fill="white" />
-            </svg></label>
-          <input id="one-slide" type="radio" name="arrow" class="slider-radio slider-radio-checked" checked>
-          <label for="two-slide" class="slider-arrow slider-forward"><svg width="22" height="40" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M2.07568 39.0586L0.0775051 37.0108L17.0931 19.564L0.0220261 2.06249L2.02116 0.0146904L21.0894 19.564L2.07568 39.0586Z"
-                fill="white" />
-            </svg></label>
-          <input id="two-slide" type="radio" name="arrow" class="slider-radio slider-radio-unchecked">
+          <label class="slider-arrow slider-back" for="one-slide"></label>
+          <input id="one-slide" type="radio" name="arrow" class="slider-radio slider-radio-checked visually-hidden" checked>
+          <label for="two-slide" class="slider-arrow slider-forward"></label>
+          <input id="two-slide" type="radio" name="arrow" class="slider-radio slider-radio-unchecked visually-hidden">
           <div class="slide1">
             <h3>Перфораторы</h3>
             <p>Настоящие мужские игрушки</p>
@@ -281,13 +271,13 @@
       </p>
       <div class="services-list">
         <label for="delivery" class="service-btn">Доставка</label>
-        <input id="delivery" class="visually-hidden" type="radio" name="delivery" checked>
+        <input id="delivery" class="visually-hidden" type="radio" name="service" checked>
 
         <label for="garantie" class="service-btn">Гарантия</label>
-        <input id="garantie" class="visually-hidden" type="radio" name="garantie">
+        <input id="garantie" class="visually-hidden" type="radio" name="service">
 
         <label for="credit" class="service-btn">Кредит</label>
-        <input id="credit" class="visually-hidden" type="radio" name="credit">
+        <input id="credit" class="visually-hidden" type="radio" name="service">
         <div class="service-window service-delivery">
           <h3>Доставка</h3>
           <p>
