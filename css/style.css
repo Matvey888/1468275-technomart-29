@@ -203,12 +203,14 @@
 }
 
 .trash-catalog {
+  margin: 0;
   display: block;
   max-width: 150px;
   position: relative;
   background-color: var(--basic-red);
   padding: 9px 21px 9px 35px;
   margin-left: 14px;
+  /* margin-right: -2px; */
 }
 
 .trash-catalog::before {
@@ -249,10 +251,11 @@
 }
 
 .checkout {
+  margin: 0;
   display: block;
   max-width: 150px;
   padding: 9px 16px 9px 19px;
-  margin-right: 0;
+
 }
 
 /*header*/
@@ -627,7 +630,7 @@
 .main-nav-container {
   width: 940px;
   height: 60px;
-  margin: 25px auto 60px auto;
+  margin: 28px auto 59px auto;
   padding: 0;
 }
 
@@ -859,9 +862,9 @@
   position: relative;
 }
 
-.slider-back,
-.slider-forward {
-  /* content: ''; */
+.slider-back::before,
+.slider-forward::before {
+  content: '';
   position: absolute;
   top: 122px;
   width: 22px;
@@ -873,19 +876,19 @@
   cursor: pointer;
 }
 
-.slider-back {
+.slider-back::before {
   left: 24px;
 
   background-image: url('../img/icon-left.svg');
 }
 
-.slider-forward {
+.slider-forward::before {
   right: 22px;
   background-image: url('../img/icon-right.svg');
 }
 
-/* .slider-radio-checked::before,
-.slider-radio-unchecked::before {
+.slider-forward::after,
+.slider-back::after {
   content: '';
   position: absolute;
   bottom: 56px;
@@ -897,18 +900,13 @@
   cursor: pointer;
 }
 
-.slider-radio-checked::before {
+.slider-back::after {
   right: 295px;
 }
 
-.slider-radio-unchecked::before {
+.slider-forward::after {
   left: 295px;
-} */
-
-/* .slider-radio-checked {
-  right: 295px;
-  margin-left: 20px;
-} */
+}
 
 .slide1,
 .slide2 {
@@ -1847,9 +1845,18 @@
   border-bottom: 1px solid var(--special-darken-white);
 }
 
+.filter .filter-manufacturers {
+  margin-top: 14px;
+}
+
+.filter .filter-controls {
+  margin-top: 14px;
+}
+
 .filter .filter-power {
   padding: 0;
   border: none;
+  margin-top: 20px;
 }
 
 .filter-products ul {
@@ -1862,7 +1869,7 @@
   margin: 0;
   padding: 0;
   width: 220px;
-  margin-top: 25px;
+
 }
 
 .range-controls {
@@ -1870,8 +1877,8 @@
   padding: 0;
   position: relative;
   height: 41px;
-  /* margin-top: 15px; */
-  margin-bottom: 10px;
+  margin-top: 11px;
+  margin-bottom: 7px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
@@ -1940,15 +1947,19 @@
   font-size: inherit;
 }
 
-.filter-manufacturers {
-  margin-top: 40px;
+.filter-products .filter-manufacturers {
+  padding-bottom: 14px;
 }
 
 .filter-option {
   margin: 0;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 30px;
+  margin-left: 36px;
+}
+
+.filter-checkbox:nth-child(2) {
+  margin-top: 22px;
 }
 
 .filter-option label {
@@ -1957,17 +1968,22 @@
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
+  letter-spacing: 1px;
   position: relative;
   display: block;
   cursor: pointer;
   user-select: none;
 }
 
+.filter-radio {
+  margin-top: 24px;
+}
+
 .filter-input-checkbox+label::before {
   content: '';
   position: absolute;
   top: 0;
-  left: -32px;
+  left: -35px;
   width: 23px;
   height: 23px;
   background-image: url('../img/checkbox-off.svg');
@@ -1979,7 +1995,7 @@
   content: '';
   position: absolute;
   top: 0;
-  left: -32px;
+  left: -35px;
   width: 27px;
   height: 23px;
   background-color: var(--basic-white);
@@ -1992,7 +2008,7 @@
   content: '';
   position: absolute;
   top: -5px;
-  left: -35px;
+  left: -36px;
   width: 16.5px;
   height: 16.5px;
   border: 5px solid var(--basic-graylight);
@@ -2002,12 +2018,18 @@
 .filter-input-radio:checked+label::after {
   content: '';
   position: absolute;
-  top: 3px;
+  top: 5px;
   left: -27px;
-  width: 10px;
-  height: 10px;
+  width: 9px;
+  height: 9px;
   background-color: var(--basic-graylight);
   border-radius: 50%;
+}
+
+.filter .filter-power {
+  margin: 0;
+  margin-top: 14px;
+  margin-bottom: 18px;
 }
 
 .form-button {
