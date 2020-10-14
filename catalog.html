@@ -38,7 +38,9 @@
           и инструментов для ремонта
         </p>
         <div class="header-contacts">
-          <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <div class="phone-container">
+            <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          </div>
           <p class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="users-links-container">
@@ -63,19 +65,22 @@
       </div>
     </div>
     <div class="main-nav-container">
-      <nav class="main-nav">
-        <a href="index.html">Главная</a>
-        <a href="blank.html">Компания</a>
-        <a href="catalog.html">Каталог</a>
-        <a href="blank.html">Новости</a>
-        <a href="blank.html">Спецпредложения</a>
-        <a href="blank.html">Доставка</a>
-        <a href="blank.html">Контакты</a>
-      </nav>
+      <div class="site-nav">
+        <nav class="main-nav">
+          <a href="index.html">Главная</a>
+          <a href="blank.html">Компания</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="blank.html">Новости</a>
+          <a href="blank.html">Спецпредложения</a>
+          <a href="blank.html">Доставка</a>
+          <a href="blank.html">Контакты</a>
+        </nav>
+      </div>
     </div>
   </header>
 
-  <main class="wrapper">
+
+  <main class="main-catalog wrapper">
     <div class="catalog-container">
       <div class="breadcrumbs">
         <ol class="breadcrumbs-list">
@@ -123,32 +128,32 @@
             <ul>
               <li class="filter-option filter-checkbox">
                 <input id="filter-bosch" type="checkbox" name="bosch"
-                  class="visually-hidden filter-checkbox filter-input" checked>
+                  class="visually-hidden filter-input-checkbox filter-input" checked>
                 <label for="filter-bosch">Bosch</label>
               </li>
               <li class="filter-option filter-checkbox">
                 <input id="filter-interscol" type="checkbox" name="interscol"
-                  class="visually-hidden filter-checkbox filter-input">
+                  class="visually-hidden filter-input-checkbox filter-input">
                 <label for="filter-interscol">Интерскол</label>
               </li>
               <li class="filter-option filter-checkbox">
                 <input id="filter-makita" type="checkbox" name="makita"
-                  class="visually-hidden filter-checkbox filter-input" checked>
+                  class="visually-hidden filter-input-checkbox filter-input" checked>
                 <label for="filter-makita">Makita</label>
               </li>
               <li class="filter-option filter-checkbox">
                 <input id="filter-dewalt" type="checkbox" name="dewalt"
-                  class="visually-hidden filter-checkbox filter-input">
+                  class="visually-hidden filter-input-checkbox filter-input">
                 <label for="filter-dewalt">Dewalt</label>
               </li>
               <li class="filter-option filter-checkbox">
                 <input id="filter-hitachi" type="checkbox" name="hitachi"
-                  class="visually-hidden filter-checkbox filter-input">
+                  class="visually-hidden filter-input-checkbox filter-input">
                 <label for="filter-hitachi">Hitachi</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-power">
             <legend>Питание:</legend>
             <ul>
               <li class="filter-option filter-radio">
@@ -367,10 +372,10 @@
       <p>
         Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
         кирпиче,
-        бетоне и камне.
+        бетоне и камне.<br>
         Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции
         дрели,
-        шуруповерта и отбойного молотка.
+        шуруповерта и отбойного молотка.<br>
         В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и
         ударная
         дрель.
