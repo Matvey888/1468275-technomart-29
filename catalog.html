@@ -47,13 +47,7 @@
           <div class="users-links">
             <div class="users-login-logout">
               <a class="login-link-catalog" href="blank.html">Равшан Джамшутович</a>
-              <a href="" class="logout-link"><span class="visually-hidden">Выйти</span><svg width="20" height="17"
-                  fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="logout-link-fill" d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z" fill="#C5C5C5" />
-                  <path class="logout-link-fill"
-                    d="M2.10598 13.952V3.048C2.12398 2.672 2.27698 1.991 3.11598 1.991H8.14297V0H3.11598C0.937975 0 0.111975 1.81 0.0869751 3.027V13.973C0.111975 15.189 0.937975 17 3.11598 17H8.14297V15.01H3.11598C2.27698 15.01 2.12398 14.327 2.10598 13.952Z"
-                    fill="#C5C5C5" />
-                </svg>
+              <a href="" class="logout-link"><span class="visually-hidden">Выйти</span>
               </a>
             </div>
             <div class="add-links">
@@ -84,14 +78,8 @@
     <div class="catalog-container">
       <div class="breadcrumbs">
         <ol class="breadcrumbs-list">
-          <li class="breadcrumbs-item"><a href="index.html"><span class="visually-hidden">Главная</span>
-              <svg width="14" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 7.99999V12H6V7.99999H8V12H12V7.99999L7 3.51599L2 7.99999Z" fill="#C1C6CE" />
-                <path
-                  d="M13.831 6.365L12 4.751V0H9.99998V2.987L7.33198 0.635C7.31198 0.618 7.28898 0.612 7.26798 0.598C7.24294 0.579705 7.21614 0.56396 7.18798 0.551C7.15708 0.540195 7.12529 0.532163 7.09298 0.527C7.06198 0.521 7.03198 0.515 6.99998 0.515C6.96898 0.515 6.93898 0.521 6.90798 0.527C6.87551 0.531919 6.84366 0.5403 6.81298 0.552C6.78498 0.563 6.75998 0.581 6.73298 0.598C6.71198 0.612 6.68798 0.618 6.66898 0.635L0.170976 6.365C0.0162401 6.50291 -0.0375953 6.72187 0.0355474 6.9158C0.10869 7.10974 0.293707 7.23862 0.500976 7.24C0.622907 7.24035 0.740711 7.19586 0.831976 7.115L6.99998 1.677L13.169 7.115C13.3778 7.27913 13.6784 7.25178 13.8542 7.05265C14.0299 6.85352 14.0198 6.55183 13.831 6.365Z"
-                  fill="#C1C6CE" />
-              </svg>
-            </a></li>
+          <li class="breadcrumbs-item"><a class="breadcrumbs-home" href="index.html">
+              <span class="visually-hidden">Главная</span></a></li>
           <li class="breadcrumbs-item"><a href="catalog.html">Каталог</a></li>
           <li class="breadcrumbs-item"><a href="blank.html">Инструмент</a></li>
           <li class="breadcrumbs-item current-breadcrumbs"><a>Перфораторы</a></li>
@@ -362,6 +350,17 @@
           <li class="pagination-item"><a href="#">3</a></li>
           <li class="pagination-item"><a href="#">Следующая</a></li>
         </ul>
+        <div class="cart">
+          <h2 class="visually-hidden">Корзина</h2>
+          <p>
+            Товар добавлен в корзину!
+          </p>
+          <div class="cart-bottom">
+            <button class="cart-checkout" type="button" name="cart-button">Оформить заказ</button>
+            <button class="continue-shopping" type="button" name="cart-button">Продолжить покупки</button>
+          </div>
+          <button class="close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
+        </div>
       </section>
     </div>
   </main>
@@ -419,41 +418,18 @@
           <h2 hidden>Давайте дружить</h2>
           <ul>
             <li>
-              <a class="social-button" href="#">
+              <a class="social-button vk" href="#">
                 <span class="visually-hidden">Вконтакте</span>
-                <svg width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="social-fill" fill-rule="evenodd" clip-rule="evenodd"
-                    d="M22.1627 1.4839C33.6533 1.4839 42.9683 10.5873 42.9683 21.8169C42.9683 33.0461 33.6533 42.1494 22.1627 42.1494C10.6721 42.1494 1.35714 33.0461 1.35714 21.8169C1.35714 10.5873 10.6721 1.4839 22.1627 1.4839Z"
-                    fill="#212A3A" />
-                  <path
-                    d="M24.5403 25.7281C25.4609 25.4384 26.6395 27.6406 27.8943 28.4834C28.836 29.1219 29.5573 28.9841 29.5573 28.9841L32.9017 28.9372C32.9017 28.9372 34.6495 28.8322 33.8232 27.4803C33.7549 27.3678 33.3389 26.4781 31.334 24.6472C29.2376 22.7319 29.5217 23.0422 32.0456 19.7309C33.5835 17.7125 34.1988 16.4797 34.0062 15.9547C33.8213 15.4494 32.6918 15.5806 32.6918 15.5806L28.9237 15.6059C28.5568 15.6069 28.2458 15.7175 28.1042 16.0887C28.1013 16.0925 27.5062 17.6506 26.7127 18.9753C25.0362 21.7775 24.3669 21.9266 24.0896 21.7512C23.4531 21.3453 23.6139 20.1228 23.6139 19.2537C23.6139 16.5378 24.0299 15.4053 22.7992 15.1128C22.388 15.0153 22.0876 14.9516 21.0389 14.9422C19.6985 14.9225 18.5603 14.9422 17.9151 15.2506C17.4866 15.4597 17.1582 15.9181 17.3575 15.9444C17.6079 15.9772 18.1693 16.0944 18.4697 16.4937C18.8559 17.0112 18.8443 18.1709 18.8443 18.1709C18.8443 18.1709 19.0649 21.3687 18.3243 21.7653C17.8159 22.0372 17.1206 21.4822 15.6252 18.9378C14.8615 17.6366 14.2847 16.1984 14.2847 16.1984C14.2847 16.1984 14.173 15.9312 13.9708 15.785C13.73 15.6116 13.393 15.5562 13.393 15.5562L9.81656 15.5787C9.81656 15.5787 9.27923 15.5937 9.08182 15.8244C8.90656 16.0287 9.06738 16.4506 9.06738 16.4506C9.06738 16.4506 11.8686 22.9016 15.0406 26.1509C17.9488 29.1341 21.2537 28.9362 21.2537 28.9362H22.7511C22.7511 28.9362 23.2027 28.8856 23.4338 28.6437C23.6495 28.4187 23.6399 27.9959 23.6399 27.9959C23.6399 27.9959 23.61 26.0187 24.5403 25.7281Z"
-                    fill="white" />
-                </svg>
               </a>
             </li>
             <li>
-              <a class="social-button" href="#">
+              <a class="social-button fb" href="#">
                 <span class="visually-hidden">Фейсбук</span>
-                <svg width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="social-fill" fill-rule="evenodd" clip-rule="evenodd"
-                    d="M21.8938 1.4839C33.1232 1.4839 42.2265 10.5873 42.2265 21.8169C42.2265 33.0461 33.1232 42.1494 21.8938 42.1494C10.6643 42.1494 1.56108 33.0461 1.56108 21.8169C1.56108 10.5873 10.6643 1.4839 21.8938 1.4839Z"
-                    fill="#212A3A" />
-                  <path d="M28 15V11H24C21.7909 11 20 12.7909 20 15V19H16V23H20V33H24V23H28V19H24V15H28Z"
-                    fill="white" />
-                </svg>
               </a>
             </li>
             <li>
-              <a class="social-button" href="#">
+              <a class="social-button instagram" href="#">
                 <span class="visually-hidden">Инстаграм</span>
-                <svg width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="social-fill" fill-rule="evenodd" clip-rule="evenodd"
-                    d="M21.8938 1.4839C33.1233 1.4839 42.2265 10.5873 42.2265 21.8169C42.2265 33.0461 33.1233 42.1494 21.8938 42.1494C10.6643 42.1494 1.56112 33.0461 1.56112 21.8169C1.56112 10.5873 10.6643 1.4839 21.8938 1.4839Z"
-                    fill="#212A3A" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M14 11H29C30.65 11 32 12.35 32 14V29C32 30.65 30.65 32 29 32H14C12.35 32 11 30.65 11 29V14C11 12.35 12.35 11 14 11ZM25 21.5C25 19.57 23.43 18 21.5 18C19.57 18 18 19.57 18 21.5C18 23.43 19.57 25 21.5 25C23.43 25 25 23.43 25 21.5ZM14 29V20H15.181C15.0626 20.4913 15.0019 20.9947 15 21.5C15 25.0899 17.9101 28 21.5 28C25.0899 28 28 25.0899 28 21.5C27.9986 20.9946 27.9379 20.4912 27.819 20H29V29H14ZM25 18H29V14H25V18Z"
-                    fill="white" />
-                </svg>
               </a>
             </li>
           </ul>
@@ -470,18 +446,7 @@
     </div>
   </footer>
 
-  <section class="cart">
-    <h2 class="visually-hidden">Корзина</h2>
-    <p>
-      Товар добавлен в корзину!
-    </p>
-    <div class="cart-bottom">
-      <button class="cart-checkout" type="button" name="cart-button">Оформить заказ</button>
-      <button class="continue-shopping" type="button" name="cart-button">Продолжить покупки</button>
-    </div>
 
-    <button class="close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
-  </section>
 </body>
 
 </html>
