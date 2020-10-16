@@ -1059,6 +1059,13 @@
   background-color: var(--color-error);
 }
 
+.credit-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
 /*Популярные товары и производители*/
 .pop-products {
   font-family: 'PT Sans', sans-serif;
@@ -1085,9 +1092,9 @@
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  /* align-content: center; */
   flex-wrap: wrap;
 }
 
@@ -1120,6 +1127,11 @@
   border: 1px solid var(--special-lightgrey);
   margin: 0;
   padding: 0;
+  margin-right: 17px;
+}
+
+.pop-product-item:last-child {
+  margin-right: 0;
 }
 
 .pop-product-item:nth-child(2n)::before,
@@ -1353,6 +1365,7 @@
   text-align: left;
   margin: 0;
   padding: 0;
+
 }
 
 .service-delivery {
@@ -1362,11 +1375,19 @@
   background-position: 151px 19px;
 }
 
+.service-delivery p {
+  margin-top: 5px;
+}
+
 .service-garantie {
   background-color: var(--basic-darkwhite);
   background-image: url('../img/garantie.png');
   background-repeat: no-repeat;
   background-position: 235px 0;
+}
+
+.service-garantie p {
+  text-align: left;
 }
 
 .service-credit {
@@ -2219,13 +2240,16 @@
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 48px;
 }
 
 .product-item {
   margin-bottom: 16px;
+}
+
+.product-item:nth-of-type(3n) {
+  margin-right: 0;
 }
 
 /* Описание перфоратора */
@@ -2347,14 +2371,16 @@
   grid-column: 2 / -1;
   grid-row: 7 / 8;
   display: flex;
-  justify-content: space-between;
-  width: 284px;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  /* width: 284px; */
   height: 38px;
-  margin-top: -18px;
+  margin-top: -19px;
   margin-left: -1px;
 }
 
 .pagination a {
+  margin: 0;
   display: flex;
   border-radius: 4px;
   padding: 10px 15px;
@@ -2365,22 +2391,18 @@
   border-radius: 4px;
 }
 
-.pagination-item:first-child {
-  margin-right: 2px;
+.pagination-item {
+  margin-right: 10px;
 }
 
-.pagination-item:nth-child(3) {
-  margin-left: 2px;
-}
-
-.pagination-item:last-child {
+.pagination-next {
   margin: 0;
   padding: 0;
   display: flex;
   width: 140px;
   justify-content: center;
   align-items: center;
-  margin-right: -2px;
+  margin-left: -3px;
 }
 
 .pagination-item:hover {
