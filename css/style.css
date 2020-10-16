@@ -107,7 +107,6 @@
   font-weight: normal;
   color: var(--basic-white);
   background-color: var(--basic-white);
-  /* position: relative; */
 }
 
 /* Скрытие лишних элементов */
@@ -1184,7 +1183,7 @@
   color: var(--basic-black);
   display: flex;
   align-items: center;
-  text-align: center;
+  /* text-align: center; */
   margin: 0;
   margin-left: 30px;
   margin-right: 33px;
@@ -2427,17 +2426,23 @@
 /* Форма обратной связи */
 .modal-write-us {
   display: none;
-  max-width: 620px;
-  min-height: 430px;
+  /* display: flex; */
+  width: 620px;
+  height: 430px;
   border-top: 7px solid var(--basic-red);
   background-color: var(--basic-white);
   position: fixed;
-  top: 100px;
-  left: 360px;
+  top: 17%;
+  left: 25%;
+  right: 25%;
+  padding: 0;
+  margin: auto;
   z-index: 30;
 }
 
 .write-us-form {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -2449,16 +2454,18 @@
   margin: 0;
   padding: 0;
   width: 220px;
-  margin-top: 39px;
-  margin-left: 80px;
+  /* margin-top: 39px; */
+  /* margin-left: 80px; */
 }
 
 .write-us-item:nth-child(3) {
   /* justify-self: center; */
+  margin: 0;
   margin-right: 220px;
 }
 
 .write-us-item label {
+  margin: 0;
   display: block;
   margin-bottom: 11px;
   font-family: 'Cuprum', sans-serif;
@@ -2478,9 +2485,7 @@
   line-height: 24px;
 }
 
-.email-text {
-  margin-top: -22px;
-}
+
 
 .container-btn-submit {
   align-self: flex-end;
@@ -2517,9 +2522,12 @@
   margin: 0;
   padding: 0;
   display: none;
+  /* display: block; */
   position: fixed;
-  top: 120px;
-  left: 200px;
+  top: 20%;
+  left: 13%;
+  right: 15%;
+  margin: auto;
   width: 943px;
   height: 450px;
   border-top: 7px solid var(--basic-red);
@@ -2542,8 +2550,8 @@
 
 /*Корзина*/
 .cart {
-  /* display: none; */
-  display: flex;
+  display: none;
+  /* display: flex; */
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -2551,8 +2559,9 @@
   height: 282px;
   background-color: var(--basic-white);
   position: fixed;
-  top: 314px;
-  left: 176px;
+  top: 35%;
+  /* left: 25%; */
+  margin: auto;
   border-top: 7px solid var(--basic-red);
   z-index: 50;
 }
