@@ -271,6 +271,7 @@
 }
 
 .main-header-logo {
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -279,7 +280,6 @@
   /* padding: 12px 56px 17px 56px; */
   background-color: var(--basic-red);
   box-shadow: inset 0px -5px 0px var(--basic-opacity);
-
 }
 
 .main-header-logo:active,
@@ -649,13 +649,8 @@
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
-  /* width: 843px; */
-  height: 60px;
-
-
+  min-height: 60px;
 }
 
 .main-nav a {
@@ -1226,6 +1221,7 @@
   line-height: 18px;
   color: var(--basic-white);
   margin: 0;
+  cursor: pointer;
 }
 
 /* Популярные производители */
@@ -1387,7 +1383,7 @@
 }
 
 .service-garantie p {
-  text-align: left;
+  white-space: pre-line;
 }
 
 .service-credit {
@@ -1828,6 +1824,8 @@
 }
 
 .breadcrumbs-home {
+  margin: 0;
+  padding: 0;
   display: block;
   width: 14px;
   height: 12px;
@@ -2111,7 +2109,7 @@
 .filter-input-radio+label::before {
   content: '';
   position: absolute;
-  top: -5px;
+  top: -4px;
   left: -36px;
   width: 16.5px;
   height: 16.5px;
@@ -2260,7 +2258,7 @@
 
 .perforator-description {
   width: 940px;
-  height: 261px;
+  min-height: 261px;
   margin: 0 auto;
   padding: 0 10px;
   display: flex;
