@@ -1076,7 +1076,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  height: 89px;
+  min-height: 89px;
   margin-bottom: 20px;
   background-color: var(--special-white);
 
@@ -1102,6 +1102,7 @@
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-blue);
+  max-width: 70%;
 }
 
 .img-product {
@@ -1286,13 +1287,14 @@
 /*Сервисы*/
 .services-container {
   background-color: var(--basic-darkwhite);
-  height: 522px;
+  min-height: 522px;
   margin-bottom: 70px;
 }
 
 .services {
   background-color: var(--basic-darkwhite);
   position: relative;
+  min-height: 100%;
 }
 
 .services h2 {
@@ -1320,7 +1322,6 @@
 }
 
 .services-list {
-  /* list-style: none; */
   margin: 0;
   padding: 0;
   display: flex;
@@ -2170,7 +2171,7 @@
 .sorting-list {
   list-style: none;
   display: flex;
-  /* justify-content: space-between; */
+  flex-wrap: wrap;
   width: 444px;
 }
 
