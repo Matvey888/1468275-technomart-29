@@ -2395,13 +2395,8 @@
 }
 
 .pagination-next {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  width: 140px;
-  justify-content: center;
-  align-items: center;
-  margin-left: -3px;
+  padding-left: 14px;
+  padding-right: 16px;
 }
 
 .pagination-item:hover {
