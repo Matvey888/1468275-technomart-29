@@ -21,12 +21,12 @@
         <a href="index.html" class="main-header-logo">
           <img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип магазина «Техномарт»">
         </a>
-        <div>
+        <form action="https://echo.htmlacademy.ru/" method="GET">
           <label for="search" class="visually-hidden">Поиск:</label>
           <input class="search" type="text" name="search" id="search" value="Поиск:">
-        </div>
+        </form>
         <a class="bookmarks" href="#">Закладки: 0</a>
-        <a class="trash-catalog" href="#">Корзина: 10</a>
+        <a class="basket-catalog" href="#">Корзина: 10</a>
         <a class="checkout" href="#">Оформить заказ</a>
       </div>
     </div>
@@ -164,13 +164,13 @@
         <p>Сортировка:</p>
         <ul class="sorting-list">
           <li class="sorting-item">
-            <a class="sorting-btn" href="">По цене</a></li>
+            <a class="sorting-btn sorting-active-btn" href="">По цене</a></li>
           <li class="sorting-item">
             <a class="sorting-btn" href="">По типу</a></li>
           <li class="sorting-item">
             <a class="sorting-btn" href="">По функционалу</a></li>
           <li class="sorting-item">
-            <a class="sorting-btn sorting-up" href="">
+            <a class="sorting-btn sorting-up current-sorting-btn" href="">
               <span class="visually-hidden">Вверх</span>
               <svg width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.66 0l5.5 10h-11" fill="#000000" /></svg>
