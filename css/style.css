@@ -1403,13 +1403,13 @@
   margin-left: 80px;
 }
 
-.service-garantie {
-  /* display: block; */
+/* .service-garantie {
+  display: block;
 }
 
 .service-credit {
-  /* display: block; */
-}
+  display: block;
+} */
 
 #delivery:checked+.service-btn,
 #credit:checked+.service-btn,
@@ -1661,20 +1661,6 @@
   display: block;
   width: 44px;
   height: 44px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.vk {
-  background-image: url("../img/vkontacte.svg");
-}
-
-.fb {
-  background-image: url("../img/facebook.svg");
-}
-
-.instagram {
-  background-image: url("../img/instagram.svg");
 }
 
 .footer-section-bottom p,
@@ -1683,19 +1669,19 @@
   line-height: 18px;
 }
 
-.vk:hover,
-.vk:focus {
-  background-image: url("../img/vk-hover.svg");
+.vk:hover .vk-hover,
+.vk:focus .vk-hover {
+  fill: var(--basic-red);
 }
 
-.fb:hover,
-.fb:focus {
-  background-image: url("../img/fb-hover.svg");
+.fb:hover .fb-hover,
+.fb:focus .fb-hover {
+  fill: var(--basic-red);
 }
 
-.instagram:hover,
-.instagram:focus {
-  background-image: url("../img/insta-hover.svg");
+.instagram:hover .insta-hover,
+.instagram:focus .insta-hover {
+  fill: var(--basic-red);
 }
 
 .footer-link {
@@ -2052,8 +2038,8 @@
   border-radius: 50%;
 }
 
-.filter-input:focus+label {
-  border: 1px solid var(--basic-black);
+.filter-input:focus+label::before {
+  outline: 1px solid var(--basic-black);
 }
 
 .filter-input:disabled+label::before,
@@ -2532,7 +2518,7 @@
   align-items: center;
   width: 620px;
   height: 282px;
-  top: 35%;
+  top: 30%;
   left: 27%;
   right: 25%;
   margin: auto;
