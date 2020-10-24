@@ -447,18 +447,19 @@
   left: 19px;
   width: 20px;
   height: 17px;
-  background-image: url("../img/icon-login.svg");
+  background-image: url("../img/icon-login-active.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.4;
 }
 
 .login-link:hover::before,
 .login-link:focus::before {
-  background-image: url("../img/icon-login-active.svg");
+  opacity: 1;
 }
 
 .login-link:active::before {
-  background-image: url("../img/icon-login.svg");
+  opacity: 0.3;
 }
 
 .login-link:hover,
@@ -528,9 +529,10 @@
   left: 15px;
   width: 20px;
   height: 18px;
-  background-image: url("../img/icon-user.svg");
+  background-image: url("../img/user-hover.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.3;
 }
 
 .logout-link {
@@ -538,24 +540,21 @@
   width: 20px;
   height: 17px;
   margin: 0 14px;
-  background-image: url("../img/icon-logout.svg");
+  background-image: url("../img/icon-logout-hover.svg");
+  opacity: 0.4;
 }
 
 .logout-link:hover {
-  background-image: url("../img/icon-logout-hover.svg");
+  opacity: 1;
 }
 
 .login-link-catalog:hover::before {
-  background-image: url("../img/user-hover.svg");
+  opacity: 1;
 }
 
 .login-link-catalog:active,
 .login-link-catalog:active::before {
   opacity: 0.3;
-}
-
-.logout-link:active .logout-link-fill {
-  fill: var(--special-lightgrey);
 }
 
 .my-orders,
@@ -1588,8 +1587,6 @@
   justify-content: flex-start;
   align-items: flex-start;
   margin: 0 0 36px 4px;
-  /* margin-bottom: 36px;
-  margin-left: 4px; */
 }
 
 .footer-phone {
@@ -1652,9 +1649,8 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
-
+  max-width: 150px;
 }
 
 .social-button {
@@ -2036,6 +2032,13 @@
   height: 9px;
   background-color: var(--basic-graylight);
   border-radius: 50%;
+}
+
+.filter-input-radio+label:hover::before,
+.filter-input-radio:checked+label:hover::after,
+.filter-input-checkbox:checked+label:hover::after,
+.filter-input-checkbox+label:hover::before {
+  opacity: 0.7;
 }
 
 .filter-input:focus+label::before {
