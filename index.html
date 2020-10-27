@@ -7,8 +7,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize-min.css">
+  <link rel="stylesheet" href="css/style-min.css">
 </head>
 
 <body class="page-body">
@@ -22,7 +22,7 @@
         </a>
         <form action="https://echo.htmlacademy.ru/" method="GET">
           <label for="search" class="visually-hidden">Поле поиска</label>
-          <input class="search" type="text" name="search" id="search" value="Поиск:">
+          <input class="search" type="text" name="search" id="search" placeholder="Поиск:">
         </form>
         <a class="bookmarks" href="#">Закладки: 0</a>
         <a class="basket" href="#">Корзина: 0</a>
@@ -46,10 +46,10 @@
         </div>
         <div class="login-reg-container">
           <div class="login-container">
-            <a class="login-link" href="blank.html" aria-label="авторизация">Войти</a>
+            <a class="login-link" href="#" aria-label="авторизация">Войти</a>
           </div>
           <div class="reg-container">
-            <a class="reg-link" href="blank.html">Регистрация</a>
+            <a class="reg-link" href="#">Регистрация</a>
           </div>
 
         </div>
@@ -59,12 +59,12 @@
       <div class="site-nav">
         <nav class="main-nav">
           <a href="index.html">Главная</a>
-          <a href="blank.html">Компания</a>
+          <a href="#">Компания</a>
           <a href="catalog.html">Каталог</a>
-          <a href="blank.html">Новости</a>
-          <a href="blank.html">Спецпредложения</a>
-          <a href="blank.html">Доставка</a>
-          <a href="blank.html">Контакты</a>
+          <a href="#">Новости</a>
+          <a href="#">Спецпредложения</a>
+          <a href="#">Доставка</a>
+          <a href="#">Контакты</a>
         </nav>
       </div>
     </div>
@@ -76,28 +76,28 @@
       <ul class="adventages-list">
         <li class="adventage-item materials">
           <h3>Материалы</h3>
-          <a class="adventages-button" href="blank.html" aria-label="Материалы на любой вкус">На любой вкус</a>
+          <a class="adventages-button" href="#" aria-label="Материалы на любой вкус">На любой вкус</a>
         </li>
         <li class="adventage-item tool">
           <h3>Инструмент</h3>
-          <a class="adventages-button" href="blank.html" aria-label="Инструменты на все случаи">На все случаи</a>
+          <a class="adventages-button" href="#" aria-label="Инструменты на все случаи">На все случаи</a>
         </li>
         <li class="adventage-item technics">
           <h3>Техника</h3>
-          <a class="adventages-button" href="blank.html" aria-label="Техника для стройки">Для стройки</a>
+          <a class="adventages-button" href="#" aria-label="Техника для стройки">Для стройки</a>
         </li>
         <li class="adventage-item discount">
           <h3>Скидки 50%</h3>
-          <a class="adventages-button" href="blank.html" aria-label="Скидки 50 процентов на 350 товаров">На 350
+          <a class="adventages-button" href="#" aria-label="Скидки 50 процентов на 350 товаров">На 350
             товаров</a>
         </li>
         <li class="adventage-item delivery">
           <h3>Доставка</h3>
-          <a class="adventages-button" href="blank.html" aria-label="доставка бесплатно">Бесплатно</a>
+          <a class="adventages-button" href="#" aria-label="доставка бесплатно">Бесплатно</a>
         </li>
         <li class="slider">
           <input id="one-slide" type="radio" name="arrow" class="slide-radio slider-radio-checked visually-hidden"
-            checked aria-label="Первый слайд">
+            aria-label="Первый слайд" checked>
           <label for="one-slide" class="one-slide-radio"></label>
           <label for="one-slide" class="slider-arrow slider-back"></label>
 
@@ -106,7 +106,7 @@
           <label for="two-slide" class="two-slide-radio"></label>
           <label for="two-slide" class="slider-arrow slider-forward"></label>
 
-          <div class="slide1">
+          <div class="slide1 slide-show">
             <h3>Перфораторы</h3>
             <p>Настоящие мужские игрушки</p>
             <img src="img/man-with-perforator.jpg" width="620" height="266" alt="Изображение рабочий с перфоратором"
@@ -294,33 +294,33 @@
 
           <input id="credit" class="visually-hidden" type="radio" name="service">
           <label for="credit" class="service-btn" tabindex="0">Кредит</label>
-        </div>
-        <div class="service-window service-delivery">
-          <h3>Доставка</h3>
-          <p>
-            Мы с удовольствием доставим ваш товар прямо
-            к вашему подъезду совершенно бесплатно!
-            Ведь мы неплохо заработаем,
-            поднимая его на ваш этаж!
-          </p>
-        </div>
-        <div class="service-window service-garantie">
-          <h3>Гарантия</h3>
-          <p>
-            Если купленный у нас товар поломается или заискрит,
-            а также в случае пожара, спровоцированного его
-            возгоранием, вы всегда можете быть уверены в нашей
-            гарантии. Мы обменяем сгоревший товар на новый.
-            Дом уж восстановите как-нибудь сами.
-          </p>
-        </div>
-        <div class="service-window service-credit">
-          <h3>КРЕДИТ</h3>
-          <p>
-            Залезть в долговую яму стало проще!
-            Кредитные консультанты придут вам на помощь.
-          </p>
-          <a href="" class="main-button credit-btn">Отправить заявку</a>
+          <div class="service-window service-delivery">
+            <h3>Доставка</h3>
+            <p>
+              Мы с удовольствием доставим ваш товар прямо
+              к вашему подъезду совершенно бесплатно!
+              Ведь мы неплохо заработаем,
+              поднимая его на ваш этаж!
+            </p>
+          </div>
+          <div class="service-window service-garantie">
+            <h3>Гарантия</h3>
+            <p>
+              Если купленный у нас товар поломается или заискрит,
+              а также в случае пожара, спровоцированного его
+              возгоранием, вы всегда можете быть уверены в нашей
+              гарантии. Мы обменяем сгоревший товар на новый.
+              Дом уж восстановите как-нибудь сами.
+            </p>
+          </div>
+          <div class="service-window service-credit">
+            <h3>КРЕДИТ</h3>
+            <p>
+              Залезть в долговую яму стало проще!
+              Кредитные консультанты придут вам на помощь.
+            </p>
+            <a href="" class="main-button credit-btn">Отправить заявку</a>
+          </div>
         </div>
       </div>
     </section>
@@ -370,21 +370,21 @@
           <img src="img/logo-footer.svg" width="220" height="68" alt="Логотип магазина «Техномарт»">
         </a>
         <ul class="footer-nav">
-          <li class="footer-nav-item"><a href="blank.html">Компания</a></li>
-          <li class="footer-nav-item"><a href="blank.html">Новости</a></li>
+          <li class="footer-nav-item"><a href="#">Компания</a></li>
+          <li class="footer-nav-item"><a href="#">Новости</a></li>
           <li class="footer-nav-item"><a href="catalog.html">Каталог</a></li>
-          <li class="footer-nav-item"><a href="blank.html">Доставка</a></li>
-          <li class="footer-nav-item"><a href="blank.html">Контакты</a></li>
+          <li class="footer-nav-item"><a href="#">Доставка</a></li>
+          <li class="footer-nav-item"><a href="#">Контакты</a></li>
         </ul>
         <div class="footer-adress">
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <a class="footer-phone" href="tel:+78125550555" aria-label="Телефон магазина Техномарт">+7 (812) 555-05-55</a>
         </div>
         <ul class="footer-submenu">
-          <li class="footer-submenu-item"><a href="blank.html">Материалы</a></li>
-          <li class="footer-submenu-item"><a href="blank.html">Техника</a></li>
-          <li class="footer-submenu-item"><a href="blank.html">Инструмент</a></li>
-          <li class="footer-submenu-item"><a href="blank.html">Спецпредложения</a></li>
+          <li class="footer-submenu-item"><a href="#">Материалы</a></li>
+          <li class="footer-submenu-item"><a href="#">Техника</a></li>
+          <li class="footer-submenu-item"><a href="#">Инструмент</a></li>
+          <li class="footer-submenu-item"><a href="#">Спецпредложения</a></li>
         </ul>
       </section>
     </div>
@@ -451,16 +451,15 @@
       <div class="write-us-container">
         <div class="write-us-item">
           <label for="you-name">Ваше имя:</label>
-          <input id="you-name" type="text" name="you-name" placeholder="Имя Фамилия" required>
+          <input class="name-family" id="you-name" type="text" name="you-name" placeholder="Имя Фамилия">
         </div>
         <div class="write-us-item">
           <label for="you-email">Ваш e-mail:</label>
-          <input id="you-email" type="email" name="you-email" placeholder="email@example.com" required>
+          <input class="email" id="you-email" type="email" name="you-email" placeholder="email@example.com">
         </div>
         <div class="write-us-item email-text">
           <label for="mail-text">Текст письма:</label>
-          <textarea id="mail-text" name="mail-text" rows="5" cols="59" placeholder="В свободной форме"
-            required></textarea>
+          <textarea id="mail-text" name="mail-text" rows="5" cols="59" placeholder="В свободной форме"></textarea>
         </div>
       </div>
 
@@ -475,13 +474,23 @@
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1602781308550!5m2!1sru!2sru"
       allowfullscreen="" aria-hidden="false" tabindex="0" aria-label="Карта с адресом магазина"></iframe>
-    <!--<a href="https://clck.ru/RKdrW">
-      <img src="img/map-adress.jpg" width="943" height="449" alt="Карта с точным адресом">
-    </a>-->
+
     <button class="close-button" type="button" aria-label="Закрыть"></button>
   </div>
-  <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>-->
-  <script src="js/script.js"></script>
+
+  <div class="modal modal-cart">
+    <h2 class="visually-hidden">Корзина</h2>
+    <p>
+      Товар добавлен в корзину!
+    </p>
+    <div class="cart-bottom">
+      <button class="cart-checkout" type="button" name="cart-button">Оформить заказ</button>
+      <button class="continue-shopping" type="button" name="cart-button">Продолжить покупки</button>
+    </div>
+    <button class="close-button" type="button" aria-label="Закрыть"></button>
+  </div>
+
+  <script src="js/script-min.js"></script>
 </body>
 
 </html>
