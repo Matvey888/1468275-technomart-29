@@ -893,7 +893,7 @@
   cursor: pointer;
 }
 
-#one-slide:checked~.one-slide-radio::before {
+.one-slide:checked~.one-slide-radio::before {
   content: "";
   position: absolute;
   bottom: 58px;
@@ -906,7 +906,7 @@
   cursor: pointer;
 }
 
-#two-slide:checked~.two-slide-radio::before {
+.two-slide:checked~.two-slide-radio::before {
   content: "";
   position: absolute;
   bottom: 58px;
@@ -930,12 +930,12 @@
   background-color: var(--basic-black-opacity);
 }
 
-#one-slide:checked~.slide1 {
+.one-slide:checked~.slide1 {
   display: flex;
   flex-direction: column;
 }
 
-#two-slide:checked~.slide2 {
+.two-slide:checked~.slide2 {
   display: flex;
   flex-direction: column;
 }
@@ -1245,7 +1245,6 @@
 }
 
 .services {
-  /* background-color: var(--basic-darkwhite); */
   position: relative;
   min-height: 100%;
 }
@@ -1325,7 +1324,6 @@
 }
 
 .service-delivery {
-  background-color: transparent;
   background-image: url("../img/truck.png");
   background-repeat: no-repeat;
   background-position: 151px 19px;
@@ -1336,7 +1334,6 @@
 }
 
 .service-garantie {
-  background-color: var(--basic-darkwhite);
   background-image: url("../img/garantie.png");
   background-repeat: no-repeat;
   background-position: 235px 0;
@@ -1347,7 +1344,6 @@
 }
 
 .service-credit {
-  background-color: var(--basic-darkwhite);
   background-image: url("../img/credit.png");
   background-repeat: no-repeat;
   background-position: 152px 0;
@@ -1391,27 +1387,28 @@
   margin: 0;
   padding: 0;
   display: none;
+  background-color: var(--basic-darkwhite);
   width: 100%;
   width: 619px;
   min-height: 283px;
   margin: -186px 0 0 320px;
 }
 
-#delivery:checked~.service-delivery {
+.delivery:checked~.service-delivery {
   display: block;
 }
 
-#garantie:checked~.service-garantie {
+.garantie:checked~.service-garantie {
   display: block;
 }
 
-#credit:checked~.service-credit {
+.credit:checked~.service-credit {
   display: block;
 }
 
-#delivery:checked+.service-btn,
-#credit:checked+.service-btn,
-#garantie:checked+.service-btn {
+.delivery:checked+.service-btn,
+.credit:checked+.service-btn,
+.garantie:checked+.service-btn {
   color: var(--basic-blue);
   background-color: var(--basic-white);
   box-shadow: 0px 1px 0px var(--basic-white),
@@ -2500,24 +2497,11 @@
   top: 20%;
   left: 15%;
   right: 15%;
-  margin: auto;
   width: 943px;
-  height: 450px;
-
-}
-
-.modal-map a {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  background-color: var(--basic-darkenwhite);
-  background-image: url("../img/map-adress.webp");
+  height: 440px;
+  background-image: url("../img/map-adress.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  border: none;
 }
 
 .modal-map iframe {
