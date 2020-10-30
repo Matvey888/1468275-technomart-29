@@ -4,11 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт. Главная страница</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize-min.css">
-  <link rel="stylesheet" href="css/style-min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page-body">
@@ -96,15 +93,6 @@
           <a class="adventages-button" href="#" aria-label="доставка бесплатно">Бесплатно</a>
         </li>
         <li class="slider">
-          <input id="one-slide" type="radio" name="arrow" class="slide-radio one-slide visually-hidden"
-            aria-label="Первый слайд" checked>
-          <label for="one-slide" class="one-slide-radio"></label>
-          <label for="one-slide" class="slider-arrow slider-back"></label>
-
-          <input id="two-slide" type="radio" name="arrow" class="slide-radio two-slide visually-hidden"
-            aria-label="Второй слайд">
-          <label for="two-slide" class="two-slide-radio"></label>
-          <label for="two-slide" class="slider-arrow slider-forward"></label>
 
           <div class="slide1 slide-show">
             <h3>Перфораторы</h3>
@@ -119,6 +107,12 @@
             <img src="img/man-with-drill.jpg" width="620" height="266" alt="Изображение рабочий с дрелью" tabindex="0">
             <a class="main-button open-catalog" href="catalog.html">Открыть каталог</a>
           </div>
+          <button type="button" class="slider-back" tabindex="0" aria-label="Предыдущий слайд"></button>
+          <button type="button" class="slider-forward" tabindex="0" aria-label="Следующий слайд"></button>
+          <div class="two-slide-dot"></div>
+          <div class="one-slide-dot"></div>
+          <div class="dot-red-one"></div>
+          <div class="dot-red-two not-show"></div>
         </li>
       </ul>
     </section>
@@ -286,15 +280,10 @@
       </p>
       <div class="services-list">
         <div class="services-touch">
-          <input id="delivery" class="visually-hidden delivery" type="radio" name="service" checked>
-          <label for="delivery" class="service-btn" tabindex="0">Доставка</label>
-
-          <input id="garantie" class="visually-hidden garantie" type="radio" name="service">
-          <label for="garantie" class="service-btn" tabindex="0">Гарантия</label>
-
-          <input id="credit" class="visually-hidden credit" type="radio" name="service">
-          <label for="credit" class="service-btn" tabindex="0">Кредит</label>
-          <div class="service-window service-delivery">
+          <button type="button" class="service-btn btn-delivery service-btn-active">Доставка</button>
+          <button type="button" class="service-btn btn-garantie">Гарантия</button>
+          <button type="button" class="service-btn btn-credit">Кредит</button>
+          <div class="service-window service-delivery service-show">
             <h3>Доставка</h3>
             <p>
               Мы с удовольствием доставим ваш товар прямо
@@ -319,7 +308,7 @@
               Залезть в долговую яму стало проще!
               Кредитные консультанты придут вам на помощь.
             </p>
-            <a href="" class="main-button credit-btn">Отправить заявку</a>
+            <a href="" class="main-button credit-button">Отправить заявку</a>
           </div>
         </div>
       </div>
@@ -459,7 +448,7 @@
         </div>
         <div class="write-us-item email-text">
           <label for="mail-text">Текст письма:</label>
-          <textarea id="mail-text" name="mail-text" rows="5" cols="59" placeholder="В свободной форме"></textarea>
+          <textarea id="mail-text" name="mail-text" rows="4" cols="58" placeholder="В свободной форме"></textarea>
         </div>
       </div>
 
@@ -490,7 +479,7 @@
     <button class="close-button" type="button" aria-label="Закрыть"></button>
   </div>
 
-  <script src="js/script-min.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

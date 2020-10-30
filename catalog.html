@@ -4,11 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Техномарт. Каталог товаров</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize-min.css">
-  <link rel="stylesheet" href="css/style-min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page-body">
@@ -99,8 +96,8 @@
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <div class="toggle toggle-min" tabindex="0"></div>
-                <div class="toggle toggle-max" tabindex="0"></div>
+                <div class="toggle toggle-min" tabindex="0" aria-label="Правый регулятор цены"></div>
+                <div class="toggle toggle-max" tabindex="0" aria-label="Левый регулятор цены"></div>
               </div>
               <div class="price-controls">
                 <label class="min-price" aria-label="Минимальная цена">
@@ -485,7 +482,7 @@
     </div>
     <button class="close-button" type="button" aria-label="Закрыть"></button>
   </div>
-  <script src="js/script-min.js"></script>
+  <script src="js/catalog-script.min.js"></script>
 </body>
 
 </html>
