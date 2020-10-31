@@ -203,6 +203,11 @@
 }
 
 .search {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
   width: 228px;
   height: 41px;
   background-color: transparent;
@@ -331,21 +336,22 @@
   flex-direction: row;
   justify-content: space-between;
   width: 940px;
-  margin: 27px 0;
+  margin: 27px 0 30px;
 }
 
 .store-description {
   display: flex;
-  align-items: flex-end;
+  flex-wrap: wrap;
   white-space: pre-line;
   width: 197px;
-  height: 71px;
+  min-height: 71px;
   font-style: italic;
   font-weight: normal;
   font-size: 16px;
   line-height: 23px;
   color: var(--basic-red);
   margin-left: 30px;
+  margin-top: -7px;
 }
 
 .header-contacts {
@@ -1503,7 +1509,7 @@
   grid-column: 2/3;
   list-style-type: none;
   display: flex;
-
+  flex-wrap: wrap;
 }
 
 .footer-nav {
@@ -1516,7 +1522,7 @@
 .footer-submenu {
   margin: 0;
   justify-content: space-between;
-  flex-wrap: wrap;
+
   align-items: flex-start;
   margin: 4px 0 0 -14px;
 }
@@ -1813,28 +1819,29 @@
 }
 
 
-.filter .filter-controls,
-.filter .filter-manufacturers,
-.filter .filter-power {
+.filter-controls,
+.filter-manufacturers,
+.filter-power {
   margin: 0;
-  margin-bottom: 12px;
   padding: 0;
-  padding-bottom: 25px;
-  border-bottom: 1px solid var(--special-darken-white);
-}
-
-.filter .filter-manufacturers {
-  margin-top: 14px;
 }
 
 .filter .filter-controls {
   margin-top: 14px;
+  padding-bottom: 26px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--special-darken-white);
+}
+
+.filter .filter-manufacturers {
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--special-darken-white);
 }
 
 .filter .filter-power {
   padding: 0;
   border: none;
-  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 .filter-products ul {
@@ -1918,8 +1925,9 @@
   border: none;
   border-radius: 5px;
   background: var(--special-darken-white);
-  font-family: inherit;
-  font-size: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
 }
 
 .filter-products .filter-manufacturers {
@@ -1938,9 +1946,8 @@
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 13px;
-  line-height: 18px;
-  letter-spacing: 1px;
+  font-size: 15px;
+  line-height: 19px;
   position: relative;
   display: block;
   cursor: pointer;
@@ -1981,7 +1988,7 @@
 .filter-input-radio+label::before {
   content: "";
   position: absolute;
-  top: -4px;
+  top: -5px;
   left: -36px;
   width: 16.5px;
   height: 16.5px;
@@ -1992,7 +1999,7 @@
 .filter-input-radio:checked+label::after {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 4px;
   left: -27px;
   width: 9px;
   height: 9px;
@@ -2015,10 +2022,6 @@
 .filter-input:disabled+label::after,
 .filter-input:disabled+label {
   opacity: 0.4;
-}
-
-.filter .filter-power {
-  margin: 14px 0 18px;
 }
 
 .form-button {
@@ -2060,8 +2063,9 @@
   width: 444px;
 }
 
-.sorting-item {
+.sorting-item:not(:last-child) {
   margin: 0;
+  margin-right: 40px;
 }
 
 .sorting-item:first-child {
@@ -2080,7 +2084,7 @@
 }
 
 .sorting-item:nth-child(4) {
-  margin-right: 21px;
+  margin-right: 20px;
   margin-left: 10px;
 }
 
